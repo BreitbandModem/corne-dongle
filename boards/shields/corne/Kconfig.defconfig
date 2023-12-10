@@ -1,0 +1,31 @@
+if SHIELD_CORNE_CENTRAL_LEFT
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+config ZMK_KEYBOARD_NAME
+    default "Corne Left"
+
+endif
+
+
+if SHIELD_CORNE_DONGLE
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+config ZMK_KEYBOARD_NAME
+    default "Corne Dongle"
+
+config ZMK_USB
+    default y
+
+endif
+
+
+if SHIELD_CORNE_LEFT || SHIELD_CORNE_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif
