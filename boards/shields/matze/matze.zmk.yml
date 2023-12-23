@@ -1,13 +1,13 @@
 file_format: "1"
-id: corne
-name: Corne
+id: matze
+name: Matze
 type: shield
 url: https://github.com/foostan/crkbd/
 requires: [pro_micro]
 features:
   - keys
 siblings:
-  - corne_left
-  - corne_central_left
-  - corne_right
-  - corne_dongle
+  - matze_left
+  - matze_central_left
+  - matze_right
+  - matze_dongle

@@ -1,0 +1,33 @@
+if SHIELD_MATZE_CENTRAL_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "Matze Left"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_MATZE_DONGLE
+
+config ZMK_KEYBOARD_NAME
+	default "Matze Dongle"
+
+config ZMK_SPLIT_BLE_ROLE_CENTRAL
+	default y
+
+config ZMK_USB
+	default y
+
+endif
+
+if SHIELD_MATZE_LEFT || SHIELD_MATZE_RIGHT || SHIELD_MATZE_DONGLE || SHIELD_MATZE_CENTRAL_LEFT
+
+config ZMK_SPLIT
+	default y
+
+config ZMK_BLE
+	default y
+
+endif
+
